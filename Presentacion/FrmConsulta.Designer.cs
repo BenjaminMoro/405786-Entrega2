@@ -39,6 +39,7 @@
             this.ColEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColPesoMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColPesoOcu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColDetalle = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCamiones)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(194, 21);
+            this.label1.Location = new System.Drawing.Point(263, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 24);
             this.label1.TabIndex = 0;
@@ -79,17 +80,19 @@
             this.ColPatente,
             this.ColEstado,
             this.ColPesoMax,
-            this.ColPesoOcu});
+            this.ColPesoOcu,
+            this.ColDetalle});
             this.dgvCamiones.Location = new System.Drawing.Point(12, 109);
             this.dgvCamiones.Name = "dgvCamiones";
             this.dgvCamiones.ReadOnly = true;
-            this.dgvCamiones.Size = new System.Drawing.Size(543, 282);
+            this.dgvCamiones.Size = new System.Drawing.Size(643, 282);
             this.dgvCamiones.TabIndex = 11;
+            this.dgvCamiones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCamiones_CellContentClick);
             // 
             // btnConsultar
             // 
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.Location = new System.Drawing.Point(439, 71);
+            this.btnConsultar.Location = new System.Drawing.Point(539, 73);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(116, 25);
             this.btnConsultar.TabIndex = 12;
@@ -127,11 +130,19 @@
             this.ColPesoOcu.Name = "ColPesoOcu";
             this.ColPesoOcu.ReadOnly = true;
             // 
+            // ColDetalle
+            // 
+            this.ColDetalle.HeaderText = "Detalle";
+            this.ColDetalle.Name = "ColDetalle";
+            this.ColDetalle.ReadOnly = true;
+            this.ColDetalle.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColDetalle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // FrmConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 422);
+            this.ClientSize = new System.Drawing.Size(687, 422);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.dgvCamiones);
             this.Controls.Add(this.txtPatente);
@@ -159,5 +170,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColEstado;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPesoMax;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPesoOcu;
+        private System.Windows.Forms.DataGridViewButtonColumn ColDetalle;
     }
 }

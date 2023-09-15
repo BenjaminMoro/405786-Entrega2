@@ -35,6 +35,8 @@
             this.nuevoCamionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.subirCargaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.camionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +44,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sistemaToolStripMenuItem,
-            this.transporteToolStripMenuItem});
+            this.transporteToolStripMenuItem,
+            this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -76,23 +79,38 @@
             // nuevoCamionToolStripMenuItem
             // 
             this.nuevoCamionToolStripMenuItem.Name = "nuevoCamionToolStripMenuItem";
-            this.nuevoCamionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoCamionToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.nuevoCamionToolStripMenuItem.Text = "Camiones";
             this.nuevoCamionToolStripMenuItem.Click += new System.EventHandler(this.nuevoCamionToolStripMenuItem_Click);
             // 
             // subirCargaToolStripMenuItem
             // 
             this.subirCargaToolStripMenuItem.Name = "subirCargaToolStripMenuItem";
-            this.subirCargaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.subirCargaToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.subirCargaToolStripMenuItem.Text = "Cargas";
             this.subirCargaToolStripMenuItem.Click += new System.EventHandler(this.subirCargaToolStripMenuItem_Click);
             // 
             // consToolStripMenuItem
             // 
             this.consToolStripMenuItem.Name = "consToolStripMenuItem";
-            this.consToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.consToolStripMenuItem.Text = "Consultar";
             this.consToolStripMenuItem.Click += new System.EventHandler(this.consToolStripMenuItem_Click);
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.camionesToolStripMenuItem});
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // camionesToolStripMenuItem
+            // 
+            this.camionesToolStripMenuItem.Name = "camionesToolStripMenuItem";
+            this.camionesToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.camionesToolStripMenuItem.Text = "Camiones";
+            this.camionesToolStripMenuItem.Click += new System.EventHandler(this.camionesToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -103,6 +121,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmPrincipal";
             this.Text = "FrmPrincipal";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -119,5 +138,7 @@
         private System.Windows.Forms.ToolStripMenuItem nuevoCamionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem subirCargaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem camionesToolStripMenuItem;
     }
 }

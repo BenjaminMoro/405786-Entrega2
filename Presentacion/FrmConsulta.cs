@@ -46,5 +46,21 @@ namespace Camiones.Presentacion
             }
 
         }
+
+        private void dgvCamiones_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvCamiones.CurrentCell.ColumnIndex == 5)
+            {
+                DataGridViewRow selectedRow = dgvCamiones.Rows[e.RowIndex];
+
+                int id = Convert.ToInt32(selectedRow.Cells["ColID"].Value);
+                string pat = selectedRow.Cells["ColPatente"].Value.ToString();
+                string est = selectedRow.Cells["ColEstado"].Value.ToString();
+                int max = Convert.ToInt32(selectedRow.Cells["ColPesoMax"].Value);
+                int ocu = Convert.ToInt32(selectedRow.Cells["ColPesoOcu"].Value);
+
+                new FrmDetalleConsulta(id,pat,est,max,ocu, lCamiones).ShowDialog();
+            }
+        }
     }
 }

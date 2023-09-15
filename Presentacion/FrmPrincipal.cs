@@ -31,5 +31,15 @@ namespace Camiones.Presentacion
         {
             new FrmConsulta().ShowDialog();
         }
+
+        private void camionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmReporteCamiones().ShowDialog();
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,0 +1,13 @@
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\bin\Debug\Camiones.exe.config
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\bin\Debug\Camiones.exe
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\bin\Debug\Camiones.pdb
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\obj\Debug\Camiones.csproj.AssemblyReference.cache
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\obj\Debug\Camiones.Properties.Resources.resources
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\obj\Debug\Camiones.csproj.GenerateResource.cache
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\obj\Debug\Camiones.csproj.CoreCompileInputs.cache
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\obj\Debug\Camiones.exe
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\obj\Debug\Camiones.pdb
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\obj\Debug\Camiones.Presentacion.FrmPrincipal.resources
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\obj\Debug\Camiones.Presentacion.FrmCamiones.resources
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\obj\Debug\Camiones.Presentacion.FrmCargas.resources
+E:\ProyectoCamiones-405786-MoroBenjamin\Camiones\obj\Debug\Camiones.Presentacion.FrmConsulta.resources
